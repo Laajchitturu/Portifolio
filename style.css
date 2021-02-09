@@ -1,0 +1,581 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+.max-width
+{
+  max-width: 1500px;
+  padding :0px 80px;
+  margin:auto;
+}
+.navi
+{
+    position: fixed;
+    width:100%;
+    z-index: 999;
+    padding:1px 0px;
+    background-color: rgb(52, 155, 155);                                                                                                                                                                                
+}
+
+.navi .max-width
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navi .logo a
+{
+  font-size: 35px;
+  font-weight: 600;
+  color:rgb(226, 9, 9);
+}
+.navi .logo a span
+{
+    color:black;
+}
+.navi .main-menu li
+{
+    list-style:none;
+    display: inline-block;
+}
+.navi .main-menu li a
+{
+     color:white;
+    /* border:1px solid white ;
+*/     font-size: 20px;
+     font-weight: 800;
+     margin-left: 20px;
+     transition: color 0.3s ease;
+    
+}
+.navi .main-menu li a:hover
+{
+      color:black;
+      /*border:1px solid red;*/
+}
+/*section
+{
+    background-image: url(c1.jpg);
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+}*/
+.home
+{
+    display:flex;
+    background: url("images/code1.jpg") no-repeat center ;
+    height:100vh;
+    color:white;
+    min-height: 500px;
+    background-size: cover;
+   
+}
+.home .max-width
+{
+    margin: auto 0 auto 40px;
+   
+}
+.home .homecon .text1
+{
+    font-size: 30px ; 
+} 
+.home .homecon .text2
+{
+    font-size: 40px ; 
+    margin-left: -3px;
+} 
+.home .homecon .text3
+{
+    font-size: 45px ;
+    font-weight: 600;
+    margin: 5px 0px;
+    
+} 
+.home .homecon .text3 .fir
+{
+    color:crimson;
+    font-weight: 800;
+}
+.home .homecon .text3 .sec
+{
+    color:crimson;
+    font-weight: 800;
+}
+.home .homecon a
+{
+    display: inline-block;
+    color: black;
+    background:yellow ;
+    padding: 5px 10px;
+    font-weight: bolder;
+    font-size: large;
+    font-family: sans-serif;
+    margin-top: 20px;
+    border-radius: 6px;
+}   
+.home .homecon a:hover
+{
+    background:red;
+    color: white;
+}
+/*about kosam*/
+section
+{
+    padding:100px 0px;
+}
+.about
+{
+    background:rgb(8, 12, 77);
+}
+.about .title
+{
+ text-align: center;
+ position: relative;
+ font-size: 40px;
+ color:white;
+ font-weight: 500;
+ margin-bottom: 60px;
+ padding-bottom: 20px;
+}
+.about .title::before
+{
+    content:"";
+    position:absolute;
+    left:80x;
+    bottom:15px;
+    height:4px;
+    width:160px;
+    background:white;
+    transform: translateX(-50);
+
+}
+.about .title::after
+{
+    content: "who am i";
+    position: absolute;
+    bottom:7px;
+    left:50%;
+    font-size: 20px;
+    color:crimson;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: rgb(8, 12, 77);;
+    transform:translateX(-50%) ;
+
+}
+.about .aboutcon
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .aboutcon .left
+{
+    width:45%;
+}
+.about .aboutcon .columnleft img
+{
+  height:400px;
+  width:400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.about .aboutcon .columnright       
+{
+    width:60%;
+    height:400px;
+    padding-top: 10px;
+    
+
+    
+}   
+.about .aboutcon .columnright  .text
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom:10px;
+    color:white;
+}
+.about .aboutcon .columnright   .text span, .about .aboutcon .columnright  p i{
+    color:crimson;
+}
+.about .aboutcon .columnright p
+{
+    text-align: justify;
+    color:white;
+    padding-top: 5%;
+    font-size: xx-large;
+}
+.about .aboutcon .columnright a
+{
+    text-align: justify;
+    display: inline-block;
+    color: black;
+    background:white ;
+    padding: 5px 20px;
+    font-weight:600;
+    font-size:40px;
+    font-family: robotto sans-serif;
+    margin-top: 40px;
+    margin-left: 5%;
+    border-radius: 15px;
+}
+.about .aboutcon .columnright a:hover
+{
+    color:crimson;
+    background:black;
+}
+/*services section styling*/
+.services .title
+{
+ text-align: center;
+ position: relative;
+ font-size: 40px;
+ font-weight: 500;
+ margin-bottom: 60px;
+ padding-bottom: 20px;
+}
+.services .title::before
+{
+    content:"";
+    position:absolute;
+    left:80x;
+    bottom:15px;
+    height:4px;
+    width:200px;
+    background:white;
+    transform: translateX(-50);
+
+}
+.services .title::after
+{
+    content: "what you get";
+    position: absolute;
+    bottom:7px;
+    left:50%;
+    font-size: 20px;
+    color:red;
+    padding-left: 4px;
+    padding-right: 4px;
+    background:black;
+    transform:translateX(-50%) ;
+    border-radius: 10px;
+}
+.services
+{
+    background: black;
+    color:white;
+}
+.services .servicescon
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-between;
+}
+.services .servicescon .card
+{
+    width:calc(33% -20px);
+    margin-top:20px;
+ background: #222;
+ text-align: center;
+ border-radius: 6px;
+ padding:20px 25px;
+ cursor:pointer;
+ transition: all 0.3 ease;
+}
+.services .servicescon .card .box
+{
+    transition: all 0.3 ease;
+}
+.services .servicescon .card:hover .box
+{
+    transform:scale(1.05);
+}
+.services .servicescon .card:hover
+{
+    background: crimson;
+}
+.services .servicescon .card:hover i{
+    color:black;
+}
+.services .servicescon .card i
+{
+    font-size: 50px;
+    color:crimson;
+}
+.services .servicescon .card .text
+{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0px 7px 0px;
+}
+/* skills styling*/
+.skills .title
+{
+ text-align: center;
+ position: relative;
+ font-size: 40px;
+ font-weight: 500;
+
+ margin-bottom: 20px;
+ padding-bottom: 20px;
+}
+.skills .title::before
+{
+    content:"";
+    position:absolute;
+    left:80x;
+    bottom:10px;
+    height:4px;
+    width:150px;
+    background: black;
+    transform: translateX(-50);
+
+}
+.skills .title::after
+{
+    content: "what you get";
+    position: absolute;
+    bottom:1px;
+    left:50%;
+    font-size: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background:white;
+        transform:translateX(-50%) ;
+    border-radius: 10px;
+}
+.skills .skillscon
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-between;
+
+}
+.skills .imag , .skills .imag3 {
+    height:270px;
+    width:270px;
+}
+.skills .imag4{
+    height:270px;
+    width:350px;
+}
+.skills .skillscon .card 
+{
+    padding: 25px 25px 25px 25px; 
+    background-color:rgb(64, 172, 82);
+}
+/*.skills .skillscon .card4
+{
+  margin-left: 600px;
+  margin-top: 50px;
+  padding: 25px 25px 25px 25px; 
+  background-color:rgb(64, 172, 82);
+}*/
+/*contact styling*/
+.contact .title
+{
+ text-align: center;
+ position: relative;
+ font-size: 40px;
+ font-weight: 500;
+ margin-bottom: 70px;
+ padding-bottom: 20px;
+}
+.contact .title::before
+{
+    content:"";
+    position:absolute;
+    left:80x;
+    bottom:15px;
+    height:4px;
+    width:200px;
+    background:white;
+    transform: translateX(-50);
+
+}
+.contact .title::after
+{
+    content: "meet";
+    position: absolute;
+    bottom:7px;
+    left:50%;
+    font-size: 20px;
+    color:red;
+    padding-left: 4px;
+    padding-right: 4px;
+    background:black;
+    transform:translateX(-50%) ;
+    border-radius: 10px;
+}
+.contact
+{
+  background: rgb(28, 100, 133);
+  color:white;
+}
+.contact .contactcon
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-between;
+}
+.contact .contactcon .columnleft 
+{
+    width:calc(50% -30px);
+    padding-left: 100px;
+
+}
+.contact .contactcon .text
+{
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+.content .contentcon .columnleft p
+{
+    text-align: justify;
+} 
+.content .contentcon .columnleft .icons
+{
+    margin:10px 0;
+
+}
+.contact .contactcon .row
+{
+    display: flex;
+    height:65px;
+    align-items: center;
+}
+.contact .contactcon .row .info
+{
+    margin-left: 30px;
+}
+.contact .contactcon .row i
+{
+    font-size: 25px;
+    color:crimson;
+}
+.contact .contactcon .row .info .head
+{
+    font-weight: 500;
+}
+.contact .contactcon .row .info .subt
+{
+    color:#333;
+
+}
+/*.contact .right .fields
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: space-between;
+} */
+/*.contact .right form .field,
+.contact .right form .fields .field
+{
+    height:45px;
+    width:100%;
+}*/
+.contact .contactcon .columnright
+{
+    padding-right: 400px;
+    width:900px;
+}
+/*.contact .right form .fieldname
+{
+  margin-right: 100px;
+
+      
+}
+.contact .right form .fieldmail
+{
+  margin-left: 10px;    
+}
+.contact .right form .field input
+{
+    height:100%;
+    width:100%;
+    border:1px solid red;
+    border-radius: 6px;
+    outline:none;
+    padding:0 15px;
+    font-size: 18px;
+
+
+}
+*/
+.contact .contactcon .columnright .fields .fieldname input,
+.contact .contactcon .columnright .fields .fieldmail input
+{
+    width: 100%;
+    padding:12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.contact .contactcon .columnright .field input
+{
+    width: 100%;
+    padding:12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.contact .contactcon .columnright .fieldtext textarea 
+{
+    width: 100%;
+    padding:12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.contact .contactcon .columnright .button button
+{
+    
+    box-sizing: border-box;
+    height:50px;
+    width:100px;
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.contact .contactcon .columnright .button button:hover
+{
+    background-color: crimson;
+
+}
+footer .foot
+{
+  height:50px;
+  width: 100%;
+  background-color:rgb(116, 200, 206) ;
+  font-size: 25px;
+  padding-top:10px;
+  padding-left: 100px;
+}
+footer i{
+    margin-left: 20px;
+}
+.foot
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+   
+}  
+.foot a {
+    cursor: pointer;
+}
+.foot .right a
+{
+  padding-right: 100px;
+  height: 45px;
+  width:45px;
+}
